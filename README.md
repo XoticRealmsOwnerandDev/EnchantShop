@@ -1,7 +1,7 @@
 # EnchantShop
 EnchantShop 
 A very awesome plugin that lets you create enchant shops 
-Format:  
+Format: Put this on a sign
    [EnchantShop] 
    
             cost 
@@ -27,6 +27,7 @@ Format:
 - [x] Looting
 - [ ] Respiration
 - [ ] Silk Touch
+- [ ] Efficiency
 
 # TODO:
 Finish the rest of enchants
