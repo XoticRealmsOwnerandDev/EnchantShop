@@ -25,12 +25,12 @@ Format: Put this on a sign
 - [x] Bane Of Arthropods
 - [x] Knockback
 - [x] Looting
+- [x] Efficiency
 - [ ] Respiration
 - [ ] Silk Touch
-- [ ] Efficiency
 
 # TODO:
-Finish the rest of enchants
+Finish the rest of enchants-Ez
     
 Compatibility for Forms
     
