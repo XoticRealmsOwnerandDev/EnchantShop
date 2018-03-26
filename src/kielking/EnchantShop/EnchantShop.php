@@ -231,7 +231,7 @@ class EnchantShop extends PluginBase implements Listener{
                             	$player->sendMessage(self::PREFIX . "§4You do not have enough money to buy this enchantment!");
                             }
                         }else{
-                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Piackaxe!");
+                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Pickaxe!");
                         }
                         break;
                 }
