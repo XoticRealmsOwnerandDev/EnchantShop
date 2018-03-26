@@ -234,6 +234,125 @@ class EnchantShop extends PluginBase implements Listener{
                         	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Pickaxe!");
                         }
                         break;
+			case "Thorns":
+                        if($player->getInventory()->getItemInHand() instanceof Armor){
+                        	if($this->eapi->myMoney($player->getName()) > $cost){
+                        	    $this->eapi->reduceMoney($player->getName(), $cost, true);
+                              $player->sendMessage(self::PREFIX . "§4You have been charged " . "§6$" . $cost);
+                              $enchid = Enchantment::getEnchantment(5);
+                              $ench =  new EnchantmentInstance($enchid, $level + 0);
+                              $i = clone $player->getInventory()->getItemInHand();
+                        	    $i->addEnchantment($ench);
+                              $player->getInventory()->setItemInHand($i);
+                            }else{
+                            	$player->sendMessage(self::PREFIX . "§4You do not have enough money to buy this enchantment!");
+                            }
+                        }else{
+                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Piece of Armor!");
+                        }
+                        break;
+			case "Fortune":
+                        if($player->getInventory()->getItemInHand() instanceof Pickaxe){
+                        	if($this->eapi->myMoney($player->getName()) > $cost){
+                        	    $this->eapi->reduceMoney($player->getName(), $cost, true);
+                              $player->sendMessage(self::PREFIX . "§4You have been charged " . "§6$" . $cost);
+                              $enchid = Enchantment::getEnchantment(18);
+                              $ench =  new EnchantmentInstance($enchid, $level + 0);
+                              $i = clone $player->getInventory()->getItemInHand();
+                        	    $i->addEnchantment($ench);
+                              $player->getInventory()->setItemInHand($i);
+                            }else{
+                            	$player->sendMessage(self::PREFIX . "§4You do not have enough money to buy this enchantment!");
+                            }
+                        }else{
+                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Pickaxe!");
+                        }
+                        break;
+			case "Power":
+                        if($player->getInventory()->getItemInHand() instanceof Bow){
+                        	if($this->eapi->myMoney($player->getName()) > $cost){
+                        	    $this->eapi->reduceMoney($player->getName(), $cost, true);
+                              $player->sendMessage(self::PREFIX . "§4You have been charged " . "§6$" . $cost);
+                              $enchid = Enchantment::getEnchantment(19);
+                              $ench =  new EnchantmentInstance($enchid, $level + 0);
+                              $i = clone $player->getInventory()->getItemInHand();
+                        	    $i->addEnchantment($ench);
+                              $player->getInventory()->setItemInHand($i);
+                            }else{
+                            	$player->sendMessage(self::PREFIX . "§4You do not have enough money to buy this enchantment!");
+                            }
+                        }else{
+                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Bow!");
+                        }
+                        break;
+		        case "Punch":
+                        if($player->getInventory()->getItemInHand() instanceof Bow){
+                        	if($this->eapi->myMoney($player->getName()) > $cost){
+                        	    $this->eapi->reduceMoney($player->getName(), $cost, true);
+                              $player->sendMessage(self::PREFIX . "§4You have been charged " . "§6$" . $cost);
+                              $enchid = Enchantment::getEnchantment(20);
+                              $ench =  new EnchantmentInstance($enchid, $level + 0);
+                              $i = clone $player->getInventory()->getItemInHand();
+                        	    $i->addEnchantment($ench);
+                              $player->getInventory()->setItemInHand($i);
+                            }else{
+                            	$player->sendMessage(self::PREFIX . "§4You do not have enough money to buy this enchantment!");
+                            }
+                        }else{
+                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Bow!");
+                        }
+                        break;
+			case "Flame":
+                        if($player->getInventory()->getItemInHand() instanceof Bow){
+                        	if($this->eapi->myMoney($player->getName()) > $cost){
+                        	    $this->eapi->reduceMoney($player->getName(), $cost, true);
+                              $player->sendMessage(self::PREFIX . "§4You have been charged " . "§6$" . $cost);
+                              $enchid = Enchantment::getEnchantment(21);
+                              $ench =  new EnchantmentInstance($enchid, $level + 0);
+                              $i = clone $player->getInventory()->getItemInHand();
+                        	    $i->addEnchantment($ench);
+                              $player->getInventory()->setItemInHand($i);
+                            }else{
+                            	$player->sendMessage(self::PREFIX . "§4You do not have enough money to buy this enchantment!");
+                            }
+                        }else{
+                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Bow!");
+                        }
+                        break;
+			case "Infinity":
+                        if($player->getInventory()->getItemInHand() instanceof Bow){
+                        	if($this->eapi->myMoney($player->getName()) > $cost){
+                        	    $this->eapi->reduceMoney($player->getName(), $cost, true);
+                              $player->sendMessage(self::PREFIX . "§4You have been charged " . "§6$" . $cost);
+                              $enchid = Enchantment::getEnchantment(15);
+                              $ench =  new EnchantmentInstance($enchid, $level + 0);
+                              $i = clone $player->getInventory()->getItemInHand();
+                        	    $i->addEnchantment($ench);
+                              $player->getInventory()->setItemInHand($i);
+                            }else{
+                            	$player->sendMessage(self::PREFIX . "§4You do not have enough money to buy this enchantment!");
+                            }
+                        }else{
+                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a Bow!");
+                        }
+                        break;
+			case "Depth_strider":
+                        if($player->getInventory()->getItemInHand() instanceof Boots){
+                        	if($this->eapi->myMoney($player->getName()) > $cost){
+                        	    $this->eapi->reduceMoney($player->getName(), $cost, true);
+                              $player->sendMessage(self::PREFIX . "§4You have been charged " . "§6$" . $cost);
+                              $enchid = Enchantment::getEnchantment(7);
+                              $ench =  new EnchantmentInstance($enchid, $level + 0);
+                              $i = clone $player->getInventory()->getItemInHand();
+                        	    $i->addEnchantment($ench);
+                              $player->getInventory()->setItemInHand($i);
+                            }else{
+                            	$player->sendMessage(self::PREFIX . "§4You do not have enough money to buy this enchantment!");
+                            }
+                        }else{
+                        	$player->sendMessage(self::PREFIX . "§4The item you're trying to enchant is not a pair of boots!");
+                        }
+                        break;	
                 }
             }
         }
